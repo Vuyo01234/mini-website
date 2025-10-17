@@ -92,18 +92,6 @@
             >
               Welcome to My Digital Portfolio
             </h1>
-
-            <div
-              class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator"
-            >
-              <div
-                class="w-6 h-10 border-2 border-blue-400 rounded-full flex justify-center"
-              >
-                <div
-                  class="w-1-5 h-1-5 bg-blue-400 rounded-full mt-2 scroll-dot"
-                ></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -129,7 +117,7 @@
                 <h2 class="mb-6 text-blue-800">Personal Background</h2>
                 <div class="space-y-4">
                   <p class="text-gray-700 leading-relaxed">
-                    Hi! I'm Vuyo Kumalo, a passionate graphic design student
+                    Hi! I'm Vuyo Kumalo, a passionate interactive media student
                     with a love for creating meaningful visual experiences. My
                     journey in design began during high school when I discovered
                     the power of combining creativity with strategic
@@ -296,7 +284,7 @@
                       </div>
                       <div>
                         <h4 class="text-gray-800">Email</h4>
-                        <p class="text-gray-600">vuyo.kumalo@email.com</p>
+                        <p class="text-gray-600">vuyokumalo2.o@gmail.com</p>
                       </div>
                     </div>
 
@@ -308,7 +296,7 @@
                       </div>
                       <div>
                         <h4 class="text-gray-800">Phone</h4>
-                        <p class="text-gray-600">Available upon request</p>
+                        <p class="text-gray-600">067 674 5114</p>
                       </div>
                     </div>
 
@@ -320,7 +308,7 @@
                       </div>
                       <div>
                         <h4 class="text-gray-800">Location</h4>
-                        <p class="text-gray-600">Available for remote work</p>
+                        <p class="text-gray-600">Based in Johannesburg</p>
                       </div>
                     </div>
                   </div>
@@ -393,7 +381,17 @@
               <!-- Contact Form -->
               <div class="bg-white rounded-2xl p-8 shadow-lg fade-in-right">
                 <h2 class="mb-6 text-orange-500">Send a Message</h2>
-                <form id="contact-form" class="space-y-6">
+                <form
+                  action="https://api.web3forms.com/submit"
+                  method="post"
+                  id="contact-form"
+                  class="space-y-6"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="d6c79805-6981-421e-8759-45d212e8d0cb"
+                  />
                   <div class="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label for="name" class="block text-gray-700 mb-2"
