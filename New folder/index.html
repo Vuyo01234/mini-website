@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuyo Kumalo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      id="main-nav"
+      class="fixed top-0 left-0 right-0 z-50 bg-white-90 backdrop-blur-sm border-b border-gray-200"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <ul class="flex justify-center space-x-8">
+          <li>
+            <button
+              onclick="changePage('home')"
+              class="nav-button px-4 py-2 rounded-lg transition-all duration-300"
+              data-page="home"
+            >
+              Home
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="changePage('about')"
+              class="nav-button px-4 py-2 rounded-lg transition-all duration-300"
+              data-page="about"
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="changePage('career')"
+              class="nav-button px-4 py-2 rounded-lg transition-all duration-300"
+              data-page="career"
+            >
+              Career Path
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="changePage('contact')"
+              class="nav-button px-4 py-2 rounded-lg transition-all duration-300"
+              data-page="contact"
+            >
+              Contacts
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="page-container">
+      <section id="home" class="page active">
+        <div
+          class="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-blue-50 flex items-center justify-center relative overflow-hidden"
+        >
+          <div class="absolute inset-0">
+            <div class="bg-element bg-blue-200-30 rounded-full blur-xl"></div>
+            <div class="bg-element bg-orange-200-30 rounded-full blur-xl"></div>
+          </div>
+
+          <div class="text-center z-10 px-6 max-w-4xl mx-auto">
+            <div
+              class="flex justify-center mb-8 monogram-container"
+              data-animate="true"
+            >
+              <div class="monogram-logo large interactive">
+                <img
+                  src="content/Vuyo Kumalo_NEC2024017_Monogram final.png"
+                  alt="VK Monogram - Vuyo Kumalo"
+                  class="monogram-img"
+                />
+
+                <div class="accent-dot blue-dot"></div>
+                <div class="accent-dot orange-dot"></div>
+                <div class="floating-particle blue-particle"></div>
+                <div class="floating-particle orange-particle"></div>
+              </div>
+            </div>
+
+            <h1
+              class="mb-6 gradient-text from-blue-800 via-blue-600 to-orange-500"
+            >
+              Welcome to My Digital Portfolio
+            </h1>
+
+            <div
+              class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator"
+            >
+              <div
+                class="w-6 h-10 border-2 border-blue-400 rounded-full flex justify-center"
+              >
+                <div
+                  class="w-1-5 h-1-5 bg-blue-400 rounded-full mt-2 scroll-dot"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="page">
+        <div
+          class="min-h-screen bg-gradient-to-br from-white via-orange-50 to-blue-50 pt-20 pb-12"
+        >
+          <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-12 fade-in-up">
+              <h1 class="mb-4 gradient-text from-blue-800 to-orange-500">
+                About Me
+              </h1>
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                Get to know the person behind the monogram and discover my
+                passion for interactive media
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+              <div class="bg-white rounded-2xl p-8 shadow-lg fade-in-left">
+                <h2 class="mb-6 text-blue-800">Personal Background</h2>
+                <div class="space-y-4">
+                  <p class="text-gray-700 leading-relaxed">
+                    Hi! I'm Vuyo Kumalo, a passionate graphic design student
+                    with a love for creating meaningful visual experiences. My
+                    journey in design began during high school when I discovered
+                    the power of combining creativity with strategic
+                    communication.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    When I'm not designing, you can find me exploring
+                    photography, developing software solutions, or working on
+                    brand strategies that tell compelling stories through visual
+                    design.
+                  </p>
+                  <div
+                    class="bg-gradient-to-r from-blue-50 to-orange-50 p-4 rounded-lg"
+                  >
+                    <h4 class="text-blue-800 mb-2">Quick Facts:</h4>
+                    <ul class="text-gray-700 space-y-1">
+                      <li>Graphic Design Student</li>
+                      <li>Multi-disciplinary Creative</li>
+                      <li>Passionate about brand storytelling</li>
+                      <li>Currently learning software development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-8 shadow-lg fade-in-right">
+                <h2 class="mb-6 text-orange-500">My Studies</h2>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-gray-800 mb-2">Graphic Design Course</h3>
+                    <p class="text-blue-800 mb-3">
+                      Current Student • 2024-Present
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                      Currently studying graphic design, focusing on brand
+                      identity, typography, and digital design. My coursework
+                      covers everything from traditional print design to modern
+                      digital solutions and creative strategy.
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gradient-to-r from-blue-50 to-orange-50 p-4 rounded-lg"
+                  >
+                    <h4 class="text-blue-800 mb-3">Why Graphic Design?</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                      I'm fascinated by how design can solve problems, tell
+                      stories, and create emotional connections. The field
+                      perfectly combines my analytical thinking with creative
+                      expression, allowing me to craft visual solutions that
+                      make a real impact across multiple disciplines.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="text-gray-800 mb-2">Key Areas of Interest:</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      <span
+                        class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+                        >Brand Identity</span
+                      >
+                      <span
+                        class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm"
+                        >Typography</span
+                      >
+                      <span
+                        class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+                        >Digital Design</span
+                      >
+                      <span
+                        class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm"
+                        >Photography</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="career" class="page">
+        <div
+          class="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-blue-50 pt-20 pb-12"
+        >
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 fade-in-up">
+              <h1 class="mb-4 gradient-text from-blue-800 to-orange-500">
+                Career Path
+              </h1>
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                Explore my diverse career interests and the paths I'm pursuing
+                to build a comprehensive skill set.
+              </p>
+            </div>
+
+            <div
+              class="bg-white rounded-2xl shadow-xl overflow-hidden relative"
+            >
+              <div id="career-slideshow" class="career-slideshow"></div>
+
+              <div class="absolute inset-y-0 left-4 flex items-center">
+                <button
+                  id="prev-slide"
+                  class="p-3 bg-white-90 backdrop-blur-sm rounded-full shadow-lg hover-bg-white transition-all duration-300 group"
+                >
+                  <i
+                    class="fas fa-chevron-left text-gray-700 group-hover-text-blue-800"
+                  ></i>
+                </button>
+              </div>
+
+              <div class="absolute inset-y-0 right-4 flex items-center">
+                <button
+                  id="next-slide"
+                  class="p-3 bg-white-90 backdrop-blur-sm rounded-full shadow-lg hover-bg-white transition-all duration-300 group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-gray-700 group-hover-text-blue-800"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="mt-12 bg-gradient-to-r from-blue-800 to-orange-500 rounded-2xl p-8 text-white text-center fade-in-up"
+            >
+              <h3 class="mb-4 text-white">My Ultimate Goal</h3>
+              <p class="text-orange-100 max-w-3xl mx-auto">
+                To become a versatile creative professional who bridges the gap
+                between design and technology, offering comprehensive solutions
+                that combine visual storytelling, technical innovation,
+                strategic brand thinking, and authentic documentation through
+                photography.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="page">
+        <div
+          class="min-h-screen bg-gradient-to-br from-white via-orange-50 to-blue-50 pt-20 pb-12"
+        >
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 fade-in-up">
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                Have a project in mind or just want to chat about design? I'd
+                love to hear from you!
+              </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+              <div class="space-y-8 fade-in-left">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                  <h2 class="mb-6 text-blue-800">Get in Touch</h2>
+                  <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-gradient-to-r from-blue-800 to-blue-600 rounded-full flex items-center justify-center"
+                      >
+                        <i class="fas fa-envelope text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-800">Email</h4>
+                        <p class="text-gray-600">vuyo.kumalo@email.com</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center"
+                      >
+                        <i class="fas fa-phone text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-800">Phone</h4>
+                        <p class="text-gray-600">Available upon request</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-gradient-to-r from-blue-600 to-orange-500 rounded-full flex items-center justify-center"
+                      >
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-800">Location</h4>
+                        <p class="text-gray-600">Available for remote work</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-blue-800 to-orange-500 rounded-2xl p-8 text-white"
+                >
+                  <div class="grid grid-cols-2 gap-2">
+                    <a
+                      href="https://www.linkedin.com/in/vuyo-kumalo-783286348/"
+                      target="_blank"
+                      class="flex items-center space-x-3 p-3 bg-white-20 rounded-lg hover-bg-white-30 transition-all duration-300"
+                    >
+                      <div
+                        class="w-8 h-8 bg-white-30 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-sm font-bold"
+                          ><img src="content/linkedin.png" alt=""
+                        /></span>
+                      </div>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a
+                      href="https://www.behance.net/vuyokumalo1"
+                      target="_blank"
+                      class="flex items-center space-x-3 p-3 bg-white-20 rounded-lg hover-bg-white-30 transition-all duration-300"
+                    >
+                      <div
+                        class="w-8 h-8 bg-white-30 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-sm font-bold">
+                          <img src="content/behance.png" alt=""
+                        /></span>
+                      </div>
+                      <span>Behance</span>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/vuyo_kumalo/"
+                      target="_blank"
+                      class="flex items-center space-x-3 p-3 bg-white-20 rounded-lg hover-bg-white-30 transition-all duration-300"
+                    >
+                      <div
+                        class="w-8 h-8 bg-white-30 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-sm font-bold"
+                          ><img src="content/ig.png" alt=""
+                        /></span>
+                      </div>
+                      <span>Instagram</span>
+                    </a>
+                    <a
+                      href="https://dribbble.com/Vuyo_Kumalo"
+                      target="_blank"
+                      class="flex items-center space-x-3 p-3 bg-white-20 rounded-lg hover-bg-white-30 transition-all duration-300"
+                    >
+                      <div
+                        class="w-8 h-8 bg-white-30 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-sm font-bold"
+                          ><img src="content/dribble.png" alt=""
+                        /></span>
+                      </div>
+                      <span>Dribbble</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="bg-white rounded-2xl p-8 shadow-lg fade-in-right">
+                <h2 class="mb-6 text-orange-500">Send a Message</h2>
+                <form id="contact-form" class="space-y-6">
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="name" class="block text-gray-700 mb-2"
+                        >Name *</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus-ring-2 focus-ring-blue-500 focus-border-transparent transition-all duration-300"
+                        placeholder="Your full name"
+                      />
+                    </div>
+                    <div>
+                      <label for="email" class="block text-gray-700 mb-2"
+                        >Email *</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus-ring-2 focus-ring-blue-500 focus-border-transparent transition-all duration-300"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="subject" class="block text-gray-700 mb-2"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus-ring-2 focus-ring-blue-500 focus-border-transparent transition-all duration-300"
+                      placeholder="What's this about?"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="message" class="block text-gray-700 mb-2"
+                      >Message *</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows="6"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus-ring-2 focus-ring-blue-500 focus-border-transparent transition-all duration-300 resize-none"
+                      placeholder="Tell me about your project or just say hello!"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full px-6 py-3 bg-gradient-to-r from-blue-800 to-orange-500 text-white rounded-lg shadow-lg hover-shadow-xl transform hover-scale-105 transition-all duration-300"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Availability Notice -->
+            <div
+              class="mt-12 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 fade-in-up"
+            >
+              <h3 class="text-green-700 mb-4">
+                Currently Available for Projects
+              </h3>
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                I'm actively seeking internship opportunities and freelance
+                projects. Whether you need a logo, brand identity, or any other
+                design work, I'd love to collaborate and bring your vision to
+                life!
+              </p>
+              <div
+                class="mt-4 inline-flex items-center space-x-2 text-green-600"
+              >
+                <div
+                  class="w-3 h-3 bg-green-500 rounded-full animate-pulse"
+                ></div>
+                <span class="text-sm">Responding within 24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
